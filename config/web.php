@@ -43,7 +43,6 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 ''=>'site/index',
-                'say/<message:\w+>'=>'site/say',
                 [
                     'pattern' => '<action:(about|contact|login|rout|entry)>',
                     'route'=> 'site/<action>',

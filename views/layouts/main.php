@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -37,6 +37,16 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
+            ['label'=>'Admin', 'items'=>[
+                ['label'=>'Emploees', 'url'=>['/admin/emploees']],
+                ['label'=>'Administrators', 'url'=>['/admin/administrators']],
+                ['label'=>'Teachers', 'url'=>['/admin/teachers']],
+                ['label'=>'Classrooms', 'url'=>['/admin/classrooms']],
+                ['label'=>'Computers', 'url'=>['/admin/computers']],
+                ['label'=>'Allowed Sites', 'url'=>['/admin/allowedsites']],
+                ['label'=>'Negative Sites', 'url'=>['/admin/negativesites']],
+                ['label'=>'Emploees - Classrooms ', 'url'=>['/admin/empl_-class-r']],
+            ]],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (

@@ -1,7 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Yaroslav
- * Date: 5/6/2016
- * Time: 10:17 AM
- */
+use yii\helpers\Html;
+?>
+<p>Вы ввели следующую информацию:</p>
+
+<ul>
+    <li><label>Name</label>: <?= Html::encode($model->name) ?></li>
+    <li><label>Name</label>: <?= Html::encode($model->surname) ?></li>
+    <li><label>Name</label>: <?= Html::encode($model->patronymic) ?></li>
+    <li><label>Email</label>: <?= Html::encode($model->email) ?></li>
+</ul>
